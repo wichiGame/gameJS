@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="estilos.css">
+	<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div class="datos">
+		<h2>Respuestas</h2>
+		<p id="ParrafoSaludo">Parrafo de saludo</p>
+
+		<h2>Operador ternario</h2>
+		Pulse el boton "Mostrar operador ternario", 
+		este mostrar&aacute una ventana con ejemplo.
+		<br><br>
+		Sintaxis
+		<div style="background-color: #eeeeee; color: #888888" id="operador">
+			
+			<code>nombreVariable = (condicion) ? "valor1" : "valor2";</code>
+
+		</div>
+
+
+		<h2>Entrada de datos</h2>
+
+		<div class="contenedorDatos">
+			<div class="entradaDatos">
+				<form action="" class="formulario">
+					<input class="input" id="nombreForm" type="text" placeholder="&#128101; Nombre" required autofocus>
+					<input class="input" id="edadForm" type="text" placeholder="&#127874; Edad" required>
+					<input class="input" id="paisForm" type="text" placeholder="&#127866; Pais" required>
+					<input class="input" id="sexoForm" type="text" placeholder="&#9893; Sexo" required>
+				</form>	
+			</div>
+		</div>
+
+		<h3>Resultado datos</h3>
+		<div class="resultadoDatos">
+			Nombre:     <div class="resultado" id="nombre">Nombre</div>
+			Edad:       <div class="resultado" id="edad">Edad</div>
+			Pa&iacute;s:<div class="resultado" id="pais">Pais</div>
+			Sexo:       <div class="resultado" id="sexo">Sexo</div>
+		</div>
+
+		<br>
+		
+
+		<br>
+		
+		<h2>Resultado votaciòn</h2>
+		<div id="resultados">
+			Edad
+			<div id="edad">00</div>
+			<br>
+			¿Puede votar?
+			<div id="resultado">Resultado</div>
+		</div>
+
+	</div>
+
+	<div class="botones">
+		<p>BOTONES</p>
+		<div id="texto">
+			Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Commodi nemo minus, similique nesciunt dolor soluta. Odio vitae consequuntur modi adipisci facere culpa quia beatae eius cupiditate nihil, totam! Perspiciatis, dicta.
+		</div>
+
+		<div id="botones">
+			<button id="resultadoDatos" onclick="obtenerDatos();">Resultado datos</button>
+			<button id="Ternario" onclick="operadorTernario(); obtenerDatos();">Mostrar "operador ternario"</button>
+			<button id="obtenerEdad" onclick="obtenerEdad2();">Ingrese edad</button>
+		</div>
+	</div>
+
+
+
+	<script type="text/javascript" src="index.js"></script>
+	<script >
+		//obtenerEdad();
+		//resultadoVotacion();
+		//obtenerEdad2();
+		//document.getElementById("Ternario").onclick="operadorTernario()";
+		//operadorTernario();
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+body {
+	font-family: 'Orbitron', sans Serif;
+	background-color: #5A6B90;
+	color: #cccccc;
+}
+
+.datos {
+	display: block;
+	/*flex-direction: column;*/
+}
+
+#operador {
+	background-color: #eeeeee;
+	color: #888888;
+}
+#edad {
+	background-color: #eeeeee;
+	color: #888888;
+}
+#resultado, .resultado {
+	background-color: #eeeeee;
+	color: #888888;
+}
+
+.contenedorDatos, .resultadoDatos {
+	max-width: 450px;
+	height: auto;
+	background-color: #A6ACD7;
+	margin: 5% auto;
+	padding-bottom: 1rem;
+}
+
+.entradaDatos {
+	padding: 0 2rem;
+	display: flex;
+	background-color: #aE44E9;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.input {
+	padding: .5rem;
+	margin: .5rem 0;
+	border: medium;
+	transition: all .5s;
+	border-bottom: solid #c8a838 .2rem;
+}
+
+.botones {
+	background-color: #7DDF7B;
+	color: #517B8E;
+	display: inline-block;
+	/*flex-direction: column;*/
+	margin: 3rem;
+}
+
+#botones {
+	background-color: blue;
+	display: inline-table;
+	/*flex-direction: column;*/
+	margin: 3rem 3rem 3rem;
+}
+
