@@ -10,6 +10,7 @@ function saludo() {
 document.getElementById("ParrafoSaludo").innerHTML = "Parrafo cambiado";
 //document.getElementById("edad").addEventListener("click",obtenerEdad);
 
+
 function operadorTernario() {
 	let edad = 21;
 	//let edad;
@@ -39,10 +40,17 @@ function obtenerDatos() {
 }
 
 function resultadoDatos() {
-	document.getElementById("nombre").innerHTML = nombreForm;
-	document.getElementById("edad").innerHTML = edadForm;
-	document.getElementById("pais").innerHTML = paisForm;
-	document.getElementById("sexo").innerHTML = sexoForm;
+	//VAlida que los campos no esten vacios
+	if (nombreForm == null || edadForm == null || paisForm == null || sexoForm == null ||
+		nombreForm == "" || edadForm == "" || paisForm == "" || sexoForm == "") {
+		alert("Primero llene los campos de entrada de datos");	
+	} else {
+		document.getElementById("nombre").innerHTML = nombreForm;
+		document.getElementById("edad").innerHTML = edadForm;
+		document.getElementById("pais").innerHTML = paisForm;
+		document.getElementById("sexo").innerHTML = sexoForm;
+	}
+	
 }
 
 //-----------------------------------------------------
@@ -64,4 +72,19 @@ function resultadoVotacion() {
 	document.getElementById("edad").innerHTML = edad;
 	document.getElementById("resultado").innerHTML = puedeVotar;//Mostrara el valor guardado en la variable puedeVotar
 	console.log(puedeVotar);
+}
+
+function limpiarCampos() {
+	document.getElementById("nombre").innerHTML = "Nombre";
+	document.getElementById("edad").innerHTML = "Edad";
+	document.getElementById("pais").innerHTML = "Pa&iacutes";
+	document.getElementById("sexo").innerHTML = "Sexo";
+	document.getElementById("edad").innerHTML = "00";
+	document.getElementById("resultado").innerHTML = "Resulatdo";
+
+	//Limpiar inputs
+	document.getElementById("nombreForm").innerHTML = "Nombre";
+	document.getElementById("edadForm").innerHTML = "Edad";
+	document.getElementById("paisForm").innerHTML = "Pa&iacutes";
+	document.getElementById("sexoForm").innerHTML = "Sexo";
 }
